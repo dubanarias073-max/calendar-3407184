@@ -3,117 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendario de Eventos</title>
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- container del menu -->
-    <div class="main-header">
-        <!--  menu  -->
+    <!-- HEADER -->
+    <header class="main-header">
+
         <div class="main-header__container">
-            <!-- logo del menu -->
+
             <div class="main-header__logo">
                 Calendario de Eventos
             </div>
 
-            <!-- toggle menu: boton de hamburguesa -->
-            <button class="main-header__toggle" id="menu-toggle" >
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="main-header__toggle" id="menu-toggle">
+
                 <div class="main-header__bar"></div>
                 <div class="main-header__bar"></div>
                 <div class="main-header__bar"></div>
+
             </button>
-            
-            <!-- navegacion: buscar , ayuda , configuracion -->
-            <div class="main-nav"  id="main-nav">
+
+            <!-- MENÚ -->
+            <nav class="main-nav" id="main-nav">
+
                 <ul class="main-nav__list">
+
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="">
+                        <a href="#" class="main-nav__link">
                             Buscar
                         </a>
                     </li>
+
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="">
+                        <a href="#" class="main-nav__link">
                             Ayuda
                         </a>
                     </li>
+
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="">
-                            Configuracion
+                        <a href="#" class="main-nav__link">
+                            Configuración
                         </a>
                     </li>
+
                 </ul>
-            </div> 
+
+            </nav>
+
         </div>
 
-    </div>
+    </header>
 
-
-    <!--  container del calendar  -->
+    <!-- CALENDARIO -->
     <div class="container">
 
-        <!-- Aqui va a ir el nombre del mes -->
-        <div class="month" > June </div>
+        <h1 class="month">Junio 2025</h1>
 
-        <!-- Aqui van los dias de la semana -->
-        <!-- este es un grid container-->
-        <div class="days" >
-            <div class="days__item">Mon</div>
-            <div class="days__item">Tue</div>
-            <div class="days__item">Wed</div>
-            <div class="days__item">Thu</div>
-            <div class="days__item">Fri</div>
-            <div class="days__item">Sat</div>
-            <div class="days__item">Sun</div>
+        <div class="days">
+            <div class="days__item">Lun</div>
+            <div class="days__item">Mar</div>
+            <div class="days__item">Mié</div>
+            <div class="days__item">Jue</div>
+            <div class="days__item">Vie</div>
+            <div class="days__item">Sáb</div>
+            <div class="days__item">Dom</div>
         </div>
 
-        <!-- Aqui van los dias del mes -->
         <div class="schedule">
+
             <div class="schedule__day">1</div>
             <div class="schedule__day">2</div>
-            <div class="schedule__day">3</div>
+
+            <div class="schedule__day">
+                3
+                <div class="event-card">
+                    <div class="event-icon">📚</div>
+                    <div class="event-title">Defensa de Tesis</div>
+                    <div class="event-description">Proyecto de grado</div>
+                    <div class="event-time">08:00 AM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">4</div>
-            <div class="schedule__day">5</div>
+
+            <div class="schedule__day">
+                5
+                <div class="event-card">
+                    <div class="event-icon">💻</div>
+                    <div class="event-title">Capacitación</div>
+                    <div class="event-description">Arquitectura Software</div>
+                    <div class="event-time">09:00 AM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">6</div>
             <div class="schedule__day">7</div>
-            <div class="schedule__day">8</div>
+
+            <div class="schedule__day">
+                8
+                <div class="event-card">
+                    <div class="event-icon">📋</div>
+                    <div class="event-title">Reunión</div>
+                    <div class="event-description">Seguimiento semanal</div>
+                    <div class="event-time">10:00 AM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">9</div>
-            <div class="schedule__day">10</div>
+
+            <div class="schedule__day">
+                10
+                <div class="event-card">
+                    <div class="event-icon">📝</div>
+                    <div class="event-title">Examen Parcial</div>
+                    <div class="event-description">Frontend</div>
+                    <div class="event-time">07:00 AM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">11</div>
             <div class="schedule__day">12</div>
-            <div class="schedule__day">13</div>
+
+            <div class="schedule__day">
+                13
+                <div class="event-card">
+                    <div class="event-icon">📄</div>
+                    <div class="event-title">Informe</div>
+                    <div class="event-description">Entrega mensual</div>
+                    <div class="event-time">02:00 PM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">14</div>
             <div class="schedule__day">15</div>
-            <div class="schedule__day">16</div>
+
+            <div class="schedule__day">
+                16
+                <div class="event-card">
+                    <div class="event-icon">👤</div>
+                    <div class="event-title">Entrevista</div>
+                    <div class="event-description">Selección personal</div>
+                    <div class="event-time">11:00 AM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">17</div>
-            <div class="schedule__day">18</div>
+
+            <div class="schedule__day">
+                18
+                <div class="event-card">
+                    <div class="event-icon">🔬</div>
+                    <div class="event-title">Taller</div>
+                    <div class="event-description">Laboratorio práctico</div>
+                    <div class="event-time">03:00 PM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">19</div>
             <div class="schedule__day">20</div>
-            <div class="schedule__day">21</div>
+
+            <div class="schedule__day">
+                21
+                <div class="event-card">
+                    <div class="event-icon">🎤</div>
+                    <div class="event-title">Conferencia</div>
+                    <div class="event-description">Tecnologías Web</div>
+                    <div class="event-time">04:00 PM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">22</div>
             <div class="schedule__day">23</div>
-            <div class="schedule__day">24</div>
+
+            <div class="schedule__day">
+                24
+                <div class="event-card">
+                    <div class="event-icon">⚙️</div>
+                    <div class="event-title">Code Review</div>
+                    <div class="event-description">Revisión código</div>
+                    <div class="event-time">01:00 PM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">25</div>
             <div class="schedule__day">26</div>
-            <div class="schedule__day">27</div>
+
+            <div class="schedule__day">
+                27
+                <div class="event-card">
+                    <div class="event-icon">🚀</div>
+                    <div class="event-title">Cierre Sprint</div>
+                    <div class="event-description">Entrega final</div>
+                    <div class="event-time">05:00 PM</div>
+                </div>
+            </div>
+
             <div class="schedule__day">28</div>
             <div class="schedule__day">29</div>
             <div class="schedule__day">30</div>
+
         </div>
+
     </div>
 
-    <!--funcion js de click-->
+    <!-- JAVASCRIPT MENÚ HAMBURGUESA -->
     <script>
-    // DOM: Document Object Model
-    const menuToggle = document.getElementById("menu-toggle");
-    const mainNav = document.getElementById("main-nav");
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
 
-        //evento click de menutoggle:
-        menuToggle.addEventListener('click' , function (){
-            //cambiar la clase que controla la altura del menu
-            mainNav.classList.toggle('main-nav__open')
-        })
+        menuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('main-nav__open');
+        });
     </script>
+
 </body>
 </html>
