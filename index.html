@@ -3,223 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario de Eventos</title>
-
+    <title>Calendario Colombia - Junio 2026</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="main-header">
-
+    <!-- Header / Navbar -->
+    <div class="main-header">
         <div class="main-header__container">
-
             <div class="main-header__logo">
-                Calendario de Eventos
+                 Junio 2026
             </div>
-
-            <!-- BOTÓN HAMBURGUESA -->
-            <button class="main-header__toggle" id="menu-toggle">
-
+            <button class="main-header__toggle" id="menu-toggle" aria-label="Abrir menú">
                 <div class="main-header__bar"></div>
                 <div class="main-header__bar"></div>
                 <div class="main-header__bar"></div>
-
             </button>
-
-            <!-- MENÚ -->
-            <nav class="main-nav" id="main-nav">
-
+            <div class="main-nav" id="main-nav">
                 <ul class="main-nav__list">
-
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">
-                            Buscar
-                        </a>
-                    </li>
-
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">
-                            Ayuda
-                        </a>
-                    </li>
-
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">
-                            Configuración
-                        </a>
-                    </li>
-
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Buscar</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Ayuda</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Configuración</a></li>
                 </ul>
-
-            </nav>
-
+            </div>
         </div>
+    </div>
 
-    </header>
-
-    <!-- CALENDARIO -->
+    <!-- Calendario -->
     <div class="container">
 
-        <h1 class="month">Junio 2025</h1>
+        <div class="month">Junio 2026</div>
 
+        <!-- Días de la semana -->
         <div class="days">
-            <div class="days__item">Lun</div>
-            <div class="days__item">Mar</div>
-            <div class="days__item">Mié</div>
-            <div class="days__item">Jue</div>
-            <div class="days__item">Vie</div>
-            <div class="days__item">Sáb</div>
-            <div class="days__item">Dom</div>
+            <div class="days__item">Mon</div>
+            <div class="days__item">Tues</div>
+            <div class="days__item">Wednes</div>
+            <div class="days__item">Thurs</div>
+            <div class="days__item">Fri</div>
+            <div class="days__item">Satur</div>
+            <div class="days__item">Sun</div>
         </div>
 
         <div class="schedule">
 
-            <div class="schedule__day">1</div>
-            <div class="schedule__day">2</div>
-
+            <!-- Día 1 -->
             <div class="schedule__day">
-                3
-                <div class="event-card">
-                    <div class="event-icon">📚</div>
-                    <div class="event-title">Defensa de Tesis</div>
-                    <div class="event-description">Proyecto de grado</div>
-                    <div class="event-time">08:00 AM</div>
+                <span class="schedule__day-number">1</span>
+                <div class="event-card event-card--blue">
+                    <span class="event-card__icon">⚽</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Inicio Mundial 2026</p>
+                        <p class="event-card__time">Todo el día</p>
+                        <p class="event-card__desc">Apertura Copa del Mundo USA-México-Canadá</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">4</div>
-
+            <!-- Día 2 -->
             <div class="schedule__day">
-                5
-                <div class="event-card">
-                    <div class="event-icon">💻</div>
-                    <div class="event-title">Capacitación</div>
-                    <div class="event-description">Arquitectura Software</div>
-                    <div class="event-time">09:00 AM</div>
+                <span class="schedule__day-number">2</span>
+            </div>
+
+            <!-- Día 3 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">3</span>
+            </div>
+
+            <!-- Día 4 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">4</span>
+            </div>
+
+            <!-- Día 5 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">5</span>
+            </div>
+
+            <!-- Día 6 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">6</span>
+            </div>
+
+            <!-- Día 7 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">7</span>
+                <div class="event-card event-card--green">
+                    <span class="event-card__icon">⚽</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Amistoso Colombia</p>
+                        <p class="event-card__time">06:00 pm</p>
+                        <p class="event-card__desc">Col vs Jordania – San Diego, último amistoso pre-Mundial</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">6</div>
-            <div class="schedule__day">7</div>
-
+            <!-- Día 8 -->
             <div class="schedule__day">
-                8
-                <div class="event-card">
-                    <div class="event-icon">📋</div>
-                    <div class="event-title">Reunión</div>
-                    <div class="event-description">Seguimiento semanal</div>
-                    <div class="event-time">10:00 AM</div>
+                <span class="schedule__day-number">8</span>
+            </div>
+
+            <!-- Día 9 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">9</span>
+            </div>
+
+            <!-- Día 10 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">10</span>
+            </div>
+
+            <!-- Día 11 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">11</span>
+            </div>
+
+            <!-- Día 12 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">12</span>
+            </div>
+
+            <!-- Día 13 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">13</span>
+            </div>
+
+            <!-- Día 14 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">14</span>
+            </div>
+
+            <!-- Día 15 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">15</span>
+            </div>
+
+            <!-- Día 16 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">16</span>
+            </div>
+
+            <!-- Día 17 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">17</span>
+                <div class="event-card event-card--yellow">
+                    <span class="event-card__icon">⚽</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">🇨🇴 Col vs Uzbekistán</p>
+                        <p class="event-card__time">09:00 pm</p>
+                        <p class="event-card__desc">Debut Mundial – Estadio Azteca, México. ¡Ganamos 3-1!</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">9</div>
-
+            <!-- Día 18 -->
             <div class="schedule__day">
-                10
-                <div class="event-card">
-                    <div class="event-icon">📝</div>
-                    <div class="event-title">Examen Parcial</div>
-                    <div class="event-description">Frontend</div>
-                    <div class="event-time">07:00 AM</div>
+                <span class="schedule__day-number">18</span>
+            </div>
+
+            <!-- Día 19 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">19</span>
+            </div>
+
+            <!-- Día 20 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">20</span>
+            </div>
+
+            <!-- Día 21 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">21</span>
+                <div class="event-card event-card--red">
+                    <span class="event-card__icon">🗳️</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Segunda Vuelta</p>
+                        <p class="event-card__time">08:00 am</p>
+                        <p class="event-card__desc">De la Espriella vs Cepeda – Elecciones presidenciales</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">11</div>
-            <div class="schedule__day">12</div>
-
+            <!-- Día 22 -->
             <div class="schedule__day">
-                13
-                <div class="event-card">
-                    <div class="event-icon">📄</div>
-                    <div class="event-title">Informe</div>
-                    <div class="event-description">Entrega mensual</div>
-                    <div class="event-time">02:00 PM</div>
+                <span class="schedule__day-number">22</span>
+                <div class="event-card event-card--purple">
+                    <span class="event-card__icon">📋</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Escrutinio Oficial</p>
+                        <p class="event-card__time">Todo el día</p>
+                        <p class="event-card__desc">Conteo oficial de votos por departamentos</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">14</div>
-            <div class="schedule__day">15</div>
-
+            <!-- Día 23 -->
             <div class="schedule__day">
-                16
-                <div class="event-card">
-                    <div class="event-icon">👤</div>
-                    <div class="event-title">Entrevista</div>
-                    <div class="event-description">Selección personal</div>
-                    <div class="event-time">11:00 AM</div>
+                <span class="schedule__day-number">23</span>
+                <div class="event-card event-card--yellow">
+                    <span class="event-card__icon">⚽</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">🇨🇴 Col vs RD Congo</p>
+                        <p class="event-card__time">09:00 pm</p>
+                        <p class="event-card__desc">Grupo K – Estadio Guadalajara. ¡Clasificados!</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">17</div>
-
-            <div class="schedule__day">
-                18
-                <div class="event-card">
-                    <div class="event-icon">🔬</div>
-                    <div class="event-title">Taller</div>
-                    <div class="event-description">Laboratorio práctico</div>
-                    <div class="event-time">03:00 PM</div>
+            <!-- Día 24 -->
+            <div class="schedule__day schedule__day--today">
+                <span class="schedule__day-number">24</span>
+                <div class="event-card event-card--orange">
+                    <span class="event-card__icon">🏆</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Colombia Clasifica</p>
+                        <p class="event-card__time">Todo el día</p>
+                        <p class="event-card__desc">La Tricolor avanza a los 16avos del Mundial 2026</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">19</div>
-            <div class="schedule__day">20</div>
-
+            <!-- Día 25 -->
             <div class="schedule__day">
-                21
-                <div class="event-card">
-                    <div class="event-icon">🎤</div>
-                    <div class="event-title">Conferencia</div>
-                    <div class="event-description">Tecnologías Web</div>
-                    <div class="event-time">04:00 PM</div>
+                <span class="schedule__day-number">25</span>
+                <div class="event-card event-card--red">
+                    <span class="event-card__icon">⚖️</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Presidente Electo</span>
+                        <p class="event-card__time">Todo el día</p>
+                        <p class="event-card__desc">De la Espriella confirmado nuevo presidente de Colombia</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">22</div>
-            <div class="schedule__day">23</div>
-
+            <!-- Día 26 -->
             <div class="schedule__day">
-                24
-                <div class="event-card">
-                    <div class="event-icon">⚙️</div>
-                    <div class="event-title">Code Review</div>
-                    <div class="event-description">Revisión código</div>
-                    <div class="event-time">01:00 PM</div>
+                <span class="schedule__day-number">26</span>
+            </div>
+
+            <!-- Día 27 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">27</span>
+                <div class="event-card event-card--blue">
+                    <span class="event-card__icon">⚽</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">🇨🇴 Col vs Portugal</p>
+                        <p class="event-card__time">06:30 pm</p>
+                        <p class="event-card__desc">Grupo K – Hard Rock Stadium, Miami vs Cristiano</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="schedule__day">25</div>
-            <div class="schedule__day">26</div>
-
+            <!-- Día 28 -->
             <div class="schedule__day">
-                27
-                <div class="event-card">
-                    <div class="event-icon">🚀</div>
-                    <div class="event-title">Cierre Sprint</div>
-                    <div class="event-description">Entrega final</div>
-                    <div class="event-time">05:00 PM</div>
-                </div>
+                <span class="schedule__day-number">28</span>
             </div>
 
-            <div class="schedule__day">28</div>
-            <div class="schedule__day">29</div>
-            <div class="schedule__day">30</div>
+            <!-- Día 29 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">29</span>
+            </div>
+
+            <!-- Día 30 -->
+            <div class="schedule__day">
+                <span class="schedule__day-number">30</span>
+                <div class="event-card event-card--green">
+                    <span class="event-card__icon">🎆</span>
+                    <div class="event-card__body">
+                        <p class="event-card__name">Fin de Junio 🇨🇴</p>
+                        <p class="event-card__time">Todo el día</p>
+                        <p class="event-card__desc">Un mes histórico: Mundial + elecciones presidenciales</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
+        <!-- fin .schedule -->
 
     </div>
+    <!-- fin .container -->
 
-    <!-- JAVASCRIPT MENÚ HAMBURGUESA -->
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="modal__close" id="modal-close">✕</button>
+            <div class="modal__icon" id="modal-icon"></div>
+            <h2 class="modal__title" id="modal-title"></h2>
+            <p class="modal__time" id="modal-time"></p>
+            <p class="modal__desc" id="modal-desc"></p>
+        </div>
+    </div>
+
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const mainNav = document.getElementById('main-nav');
-
-        menuToggle.addEventListener('click', function() {
+        /* Menú hamburguesa */
+        const menuToggle = document.getElementById("menu-toggle");
+        const mainNav    = document.getElementById("main-nav");
+        menuToggle.addEventListener('click', function () {
             mainNav.classList.toggle('main-nav__open');
         });
-    </script>
 
+        /* Modal */
+        const overlay    = document.getElementById('modal-overlay');
+        const modalClose = document.getElementById('modal-close');
+
+        document.querySelectorAll('.event-card').forEach(function(card) {
+            card.addEventListener('click', function () {
+                document.getElementById('modal-icon').textContent  = card.querySelector('.event-card__icon').textContent;
+                document.getElementById('modal-title').textContent = card.querySelector('.event-card__name').textContent;
+                document.getElementById('modal-time').textContent  = '🕐 ' + card.querySelector('.event-card__time').textContent;
+                document.getElementById('modal-desc').textContent  = card.querySelector('.event-card__desc').textContent;
+                overlay.classList.add('modal-overlay--visible');
+            });
+        });
+
+        modalClose.addEventListener('click', function () {
+            overlay.classList.remove('modal-overlay--visible');
+        });
+
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) overlay.classList.remove('modal-overlay--visible');
+        });
+    </script>
 </body>
 </html>
